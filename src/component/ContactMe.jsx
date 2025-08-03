@@ -5,6 +5,7 @@ import { FiSend } from "react-icons/fi";
 import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import WaveSection from "./WaveSection";
 
 
 
@@ -42,7 +43,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
     return (
-        <section className="relative z-10 py-20 px-5 md:px-20 bg-slate-900 overflow-hidden">
+        <section className="relative z-10 pt-20 px-5 md:px-0 bg-slate-900 overflow-hidden">
                     <ToastContainer />
 
             {/* Bubble Background */}
@@ -138,7 +139,7 @@ import 'react-toastify/dist/ReactToastify.css';
                             <a href="mailto:you@example.com" target="_blank" rel="noopener noreferrer">
                                 <FaEnvelope className="text-cyan-200 hover:text-white transition" />
                             </a>
-                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/ahshasib" target="_blank" rel="noopener noreferrer">
                                 <FaGithub className="text-cyan-200 hover:text-white transition" />
                             </a>
                             <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
@@ -154,7 +155,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
             {/* Static Wave + Sea Life Section */}
 
-
+                  <WaveSection></WaveSection>
 
 
         </section>
