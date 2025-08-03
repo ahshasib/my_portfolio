@@ -134,7 +134,7 @@ const AboutMe = () => {
 
           I believe in waking up each day eager to make a difference!
           <br />
-          <p className='flex items-center gap-2 underline pt-3'><FaEnvelope /><span className='text-lg text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-cyan-300 tracking-wide font-mono'>ahshasibul6@gmail.com</span></p>
+          <small className='flex items-center gap-2 underline pt-3'><FaEnvelope /><span className='text-lg text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-cyan-300 tracking-wide font-mono'>ahshasibul6@gmail.com</span></small>
         </motion.p>
 
         <motion.p

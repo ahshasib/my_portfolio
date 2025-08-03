@@ -52,13 +52,13 @@ const Navbar = () => {
         <a
                     href="/your-resume.pdf"
                     download
-                    className="group relative inline-flex items-center gap-2 px-4 py-3 border-2 border-transparent bg-slate-800 text-cyan-300 font-mono font-bold rounded-full overflow-hidden scale-105 hover:text-white transition-all duration-300"
+                    className="group relative inline-flex items-center gap-2 px-4 py-2 border-2 border-transparent bg-slate-800 text-cyan-300 font-mono font-bold rounded-full overflow-hidden scale-105 hover:text-white transition-all duration-300"
                 >
                     {/* Spinning border background */}
-                    <span className="absolute inset-0 z-0 rounded-md border border-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 animate-spin-slow"></span>
+                    <span className="absolute inset-[1px] z-0 rounded-md border border-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 animate-spin-slow"></span>
 
                     {/* Inner mask to hide the gradient background */}
-                    <span className="absolute inset-0 z-0 rounded-md bg-slate-800"></span>
+                    <span className="absolute inset-[1px] z-0 rounded-md bg-slate-800"></span>
 
                     {/* Button Content */}
                     <span className="relative z-10 flex items-center gap-2">
