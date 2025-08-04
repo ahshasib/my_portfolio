@@ -41,7 +41,7 @@ const ContactMe = () => {
   };
 
   return (
-    <section className="relative z-10 pt-20 px-5 md:px-0 bg-slate-900 overflow-hidden">
+    <section className="relative z-10 pt-20 px-0 bg-slate-900 overflow-hidden">
       <ToastContainer />
 
       {/* 🔵 Realistic Bubbles rising */}
@@ -95,31 +95,31 @@ const ContactMe = () => {
         const flip = isRight ? 'scale-x-100' : 'scale-x-[-1]';
         const verticalDrift = [0, 5 * direction, -5 * direction, 0];
 
-        // return (
-        //   <motion.div
-        //     key={index}
-        //     className={`absolute z-10 pointer-events-none ${blur}`}
-        //     style={{
-        //       top: `${top}vh`,
-        //       width: `${size}px`,
-        //       height: 'auto',
-        //       zIndex: 5,
-        //     }}
-        //     initial={{ x: startX, y: 0 }}
-        //     animate={{ x: endX, y: verticalDrift }}
-        //     transition={{
-        //       x: { duration, repeat: Infinity, delay, ease: 'linear' },
-        //       y: {
-        //         duration: duration / 3,
-        //         repeat: Infinity,
-        //         repeatType: 'mirror',
-        //         ease: 'easeInOut',
-        //       },
-        //     }}
-        //   >
-        //     <img src="/fish2.svg" alt="Fish" className={`w-full ${flip}`} />
-        //   </motion.div>
-        // );
+        return (
+          <motion.div
+            key={index}
+            className={`absolute z-10 pointer-events-none ${blur}`}
+            style={{
+              top: `${top}vh`,
+              width: `${size}px`,
+              height: 'auto',
+              zIndex: 5,
+            }}
+            initial={{ x: startX, y: 0 }}
+            animate={{ x: endX, y: verticalDrift }}
+            transition={{
+              x: { duration, repeat: Infinity, delay, ease: 'linear' },
+              y: {
+                duration: duration / 3,
+                repeat: Infinity,
+                repeatType: 'mirror',
+                ease: 'easeInOut',
+              },
+            }}
+          >
+            <img src="/fish2.svg" alt="Fish" className={`w-full ${flip}`} />
+          </motion.div>
+        );
       })}
 
       {/* Main Content */}
@@ -136,7 +136,7 @@ const ContactMe = () => {
           Contact Me
         </h2>
         <motion.div
-          className="mx-auto mt-2 w-28 h-[2px] bg-cyan-400 rounded-full shadow-cyan-500/40 shadow-md"
+          className="mx-auto my-2 w-28 h-[2px] bg-cyan-400 rounded-full shadow-cyan-500/40 shadow-md"
           animate={{ scaleX: [1, 1.4, 1] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         />
